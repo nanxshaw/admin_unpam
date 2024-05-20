@@ -188,8 +188,6 @@ include '../../controllers/user/user_controllers.php';
   //       // $('#tabel').DataTable().fnDestroy();
   //       // $('#tabel tbody').html();
   //       // $('#tabel').DataTable();
-
-
   //     },
   //     error: function(xhr, status, error) {
   //       console.error("Error:", error);

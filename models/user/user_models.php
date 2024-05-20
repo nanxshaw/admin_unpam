@@ -16,7 +16,8 @@ function getUsers()
 function addUser($users_id, $username, $password, $status)
 {
     global $conn;
-    $sql = "INSERT INTO tb_user (users_id,username, password, status) VALUES ('$users_id','$username', '$password', '$status')";
+    $create_date = date('Y-m-d H:i:s');
+    $sql = "INSERT INTO tb_user (users_id,username, password, status, create_date) VALUES ('$users_id','$username', '$password', '$status','$create_date')";
     if (!$conn->query($sql)) {
         error_log("Error adding user: " . $conn->error);
     }
@@ -25,6 +26,7 @@ function addUser($users_id, $username, $password, $status)
 function updateUser($users_id, $username, $password, $status)
 {
     global $conn;
+    $create_date = date('Y-m-d H:i:s');
     $query = "UPDATE tb_user SET  username = '$username', password = '$password', status = '$status' WHERE user_id = $users_id";
     if (!$conn->query($query)) {
         error_log("Error updating user: " . $conn->error);

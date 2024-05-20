@@ -78,6 +78,14 @@
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="/admin/pages/user/user.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Data User</p>
+                </a>
+              </li>
+            </ul>
           </li>
           <li class="nav-header">SETTING</li>
           <li class="nav-item">
